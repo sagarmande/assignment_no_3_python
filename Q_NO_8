@@ -1,0 +1,17 @@
+def my_function():
+    # This function does not have a return statement
+
+result = my_function()  # Call the function
+print(result)  # Output: None
+
+
+
+def my_function():
+    # This function does not have a return statement
+
+result = my_function()  # Call the function
+print(result)  # Output: None
+
+# Checking if the result is None
+if result is None:
+    print("The result is None.")
