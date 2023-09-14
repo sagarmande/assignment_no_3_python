@@ -1,0 +1,18 @@
+Return Statement: In most programming languages, functions use a return statement to specify the value that should be returned. This value can be a variable, a literal value, or the result of an expression.
+
+Purpose: Return values are used to convey the outcome of a function's execution. They can be used for various purposes, such as passing calculated results, error codes, or status information back to the calling code.
+
+Accessing Return Values: The return value of a function can be assigned to a variable when the function is called, allowing the calling code to access and use the returned data.
+
+Use in Expressions: Yes, it is possible to use a return value in an expression. Since the return value is typically a data value, you can use it in arithmetic operations, comparisons, or any other expressions just like any other variable or value.
+
+def add(a, b):
+    result = a + b
+    return result  # The 'result' variable is returned as the return value
+
+# Calling the function and using the return value in an expression
+sum_result = add(3, 4)  # The function returns 7, which is assigned to 'sum_result'
+product_result = add(2, 5) * 10  # The function returns 7, which is multiplied by 10
+
+print("Sum:", sum_result)
+print("Product:", product_result)
