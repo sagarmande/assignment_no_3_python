@@ -1,0 +1,15 @@
+Function:
+
+A function is a self-contained block of code that performs a specific task or set of tasks.
+It is defined with a name, a parameter list (optional), and a code block that contains the instructions to be executed when the function is called.
+Functions are used for code modularity and reusability. They allow you to encapsulate a piece of functionality so that it can be called and reused multiple times from different parts of your program.
+Functions are like blueprints or templates for performing a task; they define what should be done when invoked but do not execute their code until they are called.
+
+def greet(name):
+    return f"Hello, {name}!"
+Function Call:
+
+A function call, on the other hand, is the act of executing or invoking a function. When you call a function, you are instructing the program to execute the code inside that function.
+A function call consists of the function's name followed by parentheses, and you may provide arguments (values or expressions) inside the parentheses, if the function expects them.
+
+message = greet("Alice")
