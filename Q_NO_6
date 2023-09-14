@@ -1,0 +1,26 @@
+When a function call in Python returns, the variables that were defined within the local scope of that function become inaccessible and are essentially destroyed. This process is known as "variable scope" and involves the following key points:
+
+Local Variables: Variables defined within a function's local scope are considered local variables. They are created when the function is called and exist only for the duration of that function's execution.
+
+Lifetime: The lifetime of a local variable is limited to the time during which the function is running. When the function call returns, the local variables are automatically deallocated, and their values are no longer accessible.
+
+Inaccessibility: Once the function has returned, you cannot directly access or reference the local variables from outside the function. Attempting to do so will result in an error.
+
+Here's an example to illustrate this concept:
+
+def my_function():
+    local_variable = 5
+    print("Inside the function:", local_variable)
+
+my_function()  # Call the function
+
+# Attempting to access local_variable here will result in a NameError
+# because it is no longer in scope after the function returns.
+
+
+def add(a, b):
+    result = a + b
+    return result
+
+sum_result = add(3, 4)  # Call the function and store the result in the global scope
+print("Sum:", sum_result)  # Access and print the result outside the function
