@@ -1,0 +1,18 @@
+Function Definition: You define a function by specifying its name, parameters (if any), and the code block that constitutes the function's body. However, at this stage, the code inside the function is not executed. It's just stored in memory, ready to be used.
+
+Function Call: When you want to execute the code within the function, you call the function by its name and provide any required arguments or parameters. This is when the code inside the function is executed, and it runs from start to finish, performing its specified tasks.
+
+Return Value: If the function is designed to return a value, it will return that value to the calling code when its execution is complete. This returned value can then be used or assigned to a variable as needed.
+
+
+
+# Function definition
+def greet(name):
+    return f"Hello, {name}!"
+
+# Function call
+message = greet("Alice")
+
+# The code inside the greet function is executed when it's called,
+# and the returned value is stored in the 'message' variable.
+print(message)  # Output: "Hello, Alice!"
