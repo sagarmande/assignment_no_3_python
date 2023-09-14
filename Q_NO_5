@@ -1,0 +1,26 @@
+Global Scope:
+
+There is only one global scope in a Python program.
+The global scope encompasses the entire program and includes variables and objects defined at the top level of the program (outside of any functions or classes).
+Variables defined in the global scope are accessible from anywhere in the program, including within functions and classes, as long as they are not shadowed by local variables with the same name.
+The global scope is created when the program starts executing and remains active until the program terminates.
+global_variable = 10  # This is in the global scope
+
+def my_function():
+    print(global_variable)  # Accessing the global variable from within the function
+
+my_function()
+
+Local Scopes:
+
+In Python, there can be multiple local scopes, and each local scope is associated with a specific function or code block.
+A local scope is created when a function is called, and it encompasses the code within that function.
+Variables defined within a local scope (e.g., function parameters or variables declared inside the function) are only accessible within that specific function or code block. They are considered local variables.
+Local scopes are temporary and are created and destroyed each time a function is called and returns.
+
+def my_function():
+    local_variable = 5  # This is in the local scope of my_function
+    print(local_variable)
+
+my_function()
+# Attempting to access local_variable here would result in an error
