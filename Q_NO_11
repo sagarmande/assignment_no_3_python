@@ -1,0 +1,4 @@
+import areallyourpetsnamederic
+
+# Now, you can use functions or variables from the 'areallyourpetsnamederic' module.
+areallyourpetsnamederic.some_function()
